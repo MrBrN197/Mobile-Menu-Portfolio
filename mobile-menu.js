@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const links = modal.querySelectorAll('li');
-  links.forEach((link) => link.addEventListener('click', (e) => {
+  links.forEach((link) => link.addEventListener('click', () => {
     // e.preventDefault();
     document.body.removeChild(modal);
     console.log('hiding mobile menu');
