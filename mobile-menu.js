@@ -25,6 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
   modal.id = 'modal';
   modal.innerHTML = mobileMenu;
 
+  // const close = modal.querySelector('#close');
+  const close = modal.querySelector('#modal #close');
+  close.addEventListener('click', () => {
+    modal.style.opacity = 0;
+    modal.style.zIndex = -1000;
+    // const body = document.body;
+    // body.removeChild(modal);
+    document.body.removeChild(modal);
+  });
+
   const hamburger = document.querySelector('.menu-bars');
   hamburger.addEventListener('click', () => {
     modal.style.opacity = 1;
