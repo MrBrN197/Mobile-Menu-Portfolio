@@ -9,13 +9,13 @@ const mobileMenu = `
 <nav>
   <ul>
     <li>
-      <a href="#recent-works-start">Portfolio</a>
+      <a href="#projects">Portfolio</a>
     </li>
     <li>
-      <a href="#about-start">About</a>
+      <a href="#about-me">About</a>
     </li>
     <li>
-      <a href="#contact-start">Contact</a>
+      <a href="contact">Contact</a>
     </li>
   </ul>
 </nav>`;
@@ -31,6 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.style.zIndex = -1000;
     document.body.removeChild(modal);
   });
+
+  const links = modal.querySelectorAll('li');
+  links.forEach((link) => link.addEventListener('click', (e) => {
+    // e.preventDefault();
+    document.body.removeChild(modal);
+    console.log('hiding mobile menu');
+  }));
 
   const hamburger = document.querySelector('.menu-bars');
   hamburger.addEventListener('click', () => {
