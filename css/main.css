@@ -423,11 +423,40 @@ textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: white;
+  background-color: #3c3a39;
   padding: 0 28px;
   opacity: 0;
   transition: all 200ms;
   z-index: -1000;
+}
+
+#modal nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+#modal #close {
+  padding: 1em;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: auto;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+#modal a {
+  padding-left: 0.4em;
+  display: block;
+  text-align: start;
+  border-bottom: 1px solid #6f6c6b;
+  color: #fff5e1;
+  padding-bottom: 0.94rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 @media all and (min-width: 720px) {

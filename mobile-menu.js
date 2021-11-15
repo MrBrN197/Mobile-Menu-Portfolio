@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // const close = modal.querySelector('#close');
   const close = modal.querySelector('#modal #close');
   close.addEventListener('click', () => {
+    console.log('closing mobile menu');
     modal.style.opacity = 0;
     modal.style.zIndex = -1000;
     // const body = document.body;
