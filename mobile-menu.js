@@ -25,14 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
   modal.id = 'modal';
   modal.innerHTML = mobileMenu;
 
-  // const close = modal.querySelector('#close');
   const close = modal.querySelector('#modal #close');
   close.addEventListener('click', () => {
     console.log('closing mobile menu');
     modal.style.opacity = 0;
     modal.style.zIndex = -1000;
-    // const body = document.body;
-    // body.removeChild(modal);
     document.body.removeChild(modal);
   });
 
