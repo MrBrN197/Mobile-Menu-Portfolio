@@ -417,6 +417,19 @@ textarea {
     brightness(92%) contrast(82%);
 }
 
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 0 28px;
+  opacity: 0;
+  transition: all 200ms;
+  z-index: -1000;
+}
+
 @media all and (min-width: 720px) {
   .top-social {
     flex-direction: column;
